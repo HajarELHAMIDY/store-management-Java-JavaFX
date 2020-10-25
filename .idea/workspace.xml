@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0c7fa43-915e-4f05-ae01-e9e562ce94e6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VToOatFwgkiQiH447MVK7cHjFo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TAOUFIQ\IdeaProjects\Gestion_Magasin\src\market\fxml" />
+      <recent name="C:\Users\TAOUFIQ\IdeaProjects\Gestion_Magasin\src\market\controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Dashbord">
+    <configuration name="Dashbord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="market.Dashbord" />
+      <module name="Gestion_Magasin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="market.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="market.Main" />
+      <module name="Gestion_Magasin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="market.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bank.Main" />
+      <module name="Gestion_Magasin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bank.Server" />
+      <module name="Gestion_Magasin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Dashbord" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Dashbord" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0c7fa43-915e-4f05-ae01-e9e562ce94e6" name="Default Changelist" comment="" />
+      <created>1577286414695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577286414695</updated>
+      <workItem from="1577286418786" duration="8000" />
+      <workItem from="1577286492881" duration="8971000" />
+      <workItem from="1577299121835" duration="21908000" />
+      <workItem from="1577360788147" duration="24350000" />
+      <workItem from="1577391084479" duration="14925000" />
+      <workItem from="1577432985637" duration="5650000" />
+      <workItem from="1577454730240" duration="3019000" />
+      <workItem from="1577458865736" duration="31000" />
+      <workItem from="1577469868655" duration="10964000" />
+      <workItem from="1577484353700" duration="1425000" />
+      <workItem from="1577525016202" duration="43755000" />
+      <workItem from="1577613412936" duration="12139000" />
+      <workItem from="1577663273455" duration="561000" />
+      <workItem from="1577692876586" duration="510000" />
+      <workItem from="1577701269514" duration="192000" />
+      <workItem from="1577703487075" duration="619000" />
+      <workItem from="1577728977984" duration="9078000" />
+      <workItem from="1577780783875" duration="3541000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577287965775">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1577287965775" />
+    <state x="463" y="75" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1577287715881">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="75" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.738@0.0.1366.738" timestamp="1577287715881" />
+    <state x="488" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1577782508992">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1577782508992" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1577790695546">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1577790695546" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1577790695546">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1577790695546" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1577790695546">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1577790695546" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1577790695546">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1577790695546" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1577286572695">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1577286572695" />
+    <state x="413" y="150" key="extract.method.dialog" timestamp="1577541693237">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="150" key="extract.method.dialog/0.0.1366.738@0.0.1366.738" timestamp="1577541693237" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1577578267011">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1577578267011" />
+  </component>
+</project>

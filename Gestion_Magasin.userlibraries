@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="javaFX">
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx-swt.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.web.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.swing.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.media.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.fxml.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.controls.jar" />
+    <archive path="F:/java/lib/javafx-sdk-11.0.2/lib/javafx.base.jar" />
+  </library>
+  <library name="mysql-connector-java-5.1.48">
+    <archive path="C:/Users/TAOUFIQ/IdeaProjects/mysql-connector-java-5.1.48.jar" />
+  </library>
+</eclipse-userlibraries>
+

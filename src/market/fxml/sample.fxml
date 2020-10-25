@@ -1,0 +1,65 @@
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane fx:controller="market.controller.Controller"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@/Mycss.css">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label text="Gestion Produit" styleClass="custom-label"/>
+        </HBox>
+    </top>
+    <left>
+        <VBox styleClass="custom-pane-left" spacing="10">
+            <Button text="Ajouter" styleClass="custom-button" onAction="#addproduit"/>
+            <Button text="Modifier" styleClass="custom-button" lineSpacing="5"/>
+            <Button text="Suprimmer" styleClass="custom-button" lineSpacing="5"/>
+        </VBox>
+    </left>
+    <right>
+        <VBox>
+            <TextField/>
+            <TableView fx:id="tableproduit">
+                <columns>
+                    <TableColumn text="ID" >
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Designation">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="designation"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Prix">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="prix"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </right>
+    <center>
+        <GridPane styleClass="custom-pane-center">
+        <Label text="ID : " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label text="Nom : " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Label text="Prix Achat" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Label text="Prix Vente" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="idproduit" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <TextField fx:id="nomproduit" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <TextField fx:id="prixAchatproduit" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <TextField fx:id="prixVenteproduit" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label fx:id="require" GridPane.columnIndex="1" GridPane.rowIndex="5" textFill="red"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

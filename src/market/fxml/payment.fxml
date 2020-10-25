@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="market.controller.ControllerPayment"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@/Mycss.css">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label styleClass="custom-label" text="Gestion Payement" />
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="352.0" prefWidth="141.0" BorderPane.alignment="CENTER" styleClass="custom-pane-left">
+            <Button fx:id="btnadd" onAction="#ajoutePayment" styleClass="custom-button" text="Ajouter" />
+            <Button fx:id="btnupdate" onAction="#updatePayment" styleClass="custom-button" text="Modifier" />
+            <Button fx:id="btndelet" onAction="#deletPayment" styleClass="custom-button" text="Suprimmer" />
+            <Button fx:id="btnreset" onAction="#resetForm" styleClass="custom-button" text="Reset" />
+            <Button fx:id="btnshow" onAction="#showPaymentMode" styleClass="custom-button" text="Affiche" disable="true"/>
+        </VBox>
+    </left>
+    <center>
+        <GridPane BorderPane.alignment="CENTER" styleClass="custom-pane-center">
+            <Label styleClass="custom-label" text="ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label styleClass="custom-label" text="Mode" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label styleClass="custom-label" text="Date" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label styleClass="custom-label" text="Total" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label fx:id="require" styleClass="custom-label" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2" textFill="red"/>
+            <TextField fx:id="id" GridPane.columnIndex="1" GridPane.rowIndex="0" disable="true"/>
+            <DatePicker fx:id="paymentDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="paymentMode" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="total" GridPane.columnIndex="1" GridPane.rowIndex="4" disable="true"/>
+        </GridPane>
+    </center>
+</BorderPane>

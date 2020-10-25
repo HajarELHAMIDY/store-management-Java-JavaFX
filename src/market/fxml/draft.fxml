@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="market.controller.ControllerDraft"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@/Mycss.css">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label styleClass="custom-label" text="Payment par Traite" />
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="352.0" prefWidth="141.0" BorderPane.alignment="CENTER" styleClass="custom-pane-left">
+            <Button fx:id="btnAjoute" onAction="#ajoutDraft" styleClass="custom-button" text="Ajouter" />
+            <Button fx:id="btnUpdate" onAction="#updateDraft" styleClass="custom-button" text="Modifier" />
+            <Button fx:id="btnDelet" onAction="#deletDraft" styleClass="custom-button" text="Suprimmer" />
+            <Button fx:id="btnAddItem" onAction="#addNewItem" styleClass="custom-button" text="Ajouter Traite" />
+            <Button onAction="#resetForm" styleClass="custom-button" text="Reset" />
+        </VBox>
+    </left>
+    <right>
+        <TableView fx:id="tableItemDraft" onMouseClicked="#showItemDraft" prefHeight="352.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn prefWidth="32.0" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="78.0" text="montant">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="montant" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="58.0" text="date_prevue">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date_prevue" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="65.0" text="date_effectue">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date_effectue" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="65.0" text="item">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="item" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </right>
+    <center>
+        <GridPane BorderPane.alignment="CENTER" styleClass="custom-pane-center">
+            <Label styleClass="custom-label" text="ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label styleClass="custom-label" text="Nombre Traite" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label styleClass="custom-label" text="Date Debut" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label styleClass="custom-label" text="Reste" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label styleClass="custom-label" text="Total" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="idDraft" GridPane.columnIndex="1" GridPane.rowIndex="0" disable="true"/>
+            <TextField fx:id="nbDraft" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dateDraft" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="restDraft" GridPane.columnIndex="1" GridPane.rowIndex="3" disable="true"/>
+            <TextField fx:id="total" GridPane.columnIndex="1" GridPane.rowIndex="4" disable="true"/>
+        </GridPane>
+    </center>
+</BorderPane>

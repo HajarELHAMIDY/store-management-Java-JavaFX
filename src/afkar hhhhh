@@ -1,0 +1,8 @@
+1) objet envoyer serveur num info carte + compte a ajoute argent
+2) trasfaire d'argent client vers compte agence
+3) return objet (true/false,msg success/msg erreur ) response
+4) operation on peu faire ou non a discute
+
+
+
+5)if paye deja desiled button payment en interface payment

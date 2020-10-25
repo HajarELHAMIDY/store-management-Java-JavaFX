@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="449.0" prefWidth="494.0" stylesheets="@/Mycss.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="market.controller.ControllerOnline">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label styleClass="custom-label" text="Payment par Cart" />
+        </HBox>
+    </top>
+    <center>
+        <GridPane>
+            <Label styleClass="custom-label" text="ID : " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label styleClass="custom-label" text="Numero Carte : " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label styleClass="custom-label" text="Annee d'expiration : " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label styleClass="custom-label" text="Mois d'expiration : " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label styleClass="custom-label" text="CVV : " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="idOnline" GridPane.columnIndex="1" GridPane.rowIndex="0" disable="true"/>
+            <TextField fx:id="numCart" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="anneeFin" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="moisFin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="cvv" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="require" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+            <Button fx:id="btnvalid" onAction="#ajoutOnline" styleClass="custom-button" text="Ajouter" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Button fx:id="btncancel" onAction="#cancel" styleClass="custom-button" text="Annuler" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        </GridPane>
+    </center>
+</BorderPane>

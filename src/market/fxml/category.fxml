@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="market.controller.ControllerCategory"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@/Mycss.css">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label text="Gestion Category" styleClass="custom-label"/>
+        </HBox>
+    </top>
+    <left >
+        <VBox styleClass="custom-pane-left" spacing="10" >
+            <Button text="Ajouter" styleClass="custom-button" onAction="#ajoutCategory"/>
+            <Button text="Modifier" styleClass="custom-button" onAction="#updateCategory"/>
+            <Button text="Suprimmer" styleClass="custom-button" onAction="#deletCategory"/>
+
+            <Button text="Reset" styleClass="custom-button" onAction="#resetForm"/>
+        </VBox>
+    </left>
+    <right>
+        <VBox>
+            <TextField fx:id="serch" />
+            <TableView fx:id="tablecategory" onMouseClicked="#mouveToForm">
+                <columns>
+                    <TableColumn text="ID" >
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Nom">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="nom"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Description">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="description"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </right>
+    <center>
+        <GridPane styleClass="custom-pane-center">
+            <Label text="ID : " GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="custom-label"/>
+            <Label text="Nom : " GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="custom-label"/>
+            <Label text="Description" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="custom-label"/>
+            <TextField fx:id="idcategory" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <TextField fx:id="nomcategory" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="desccategory" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label fx:id="require" GridPane.columnIndex="1" GridPane.rowIndex="4" textFill="red"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

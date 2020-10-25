@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="market.controller.ControllerOrder" stylesheets="@/Mycss.css">
+    <top>
+        <HBox styleClass="custom-pane-top">
+            <Label styleClass="custom-label" text="Gestion Commande" />
+        </HBox>
+    </top>
+    <left>
+        <VBox spacing="10" styleClass="custom-pane-left">
+            <Button onAction="#ajoutOrder" styleClass="custom-button" text="Ajouter" />
+            <Button onAction="#updateOrder" styleClass="custom-button" text="Modifier" />
+            <Button onAction="#deletOrder" styleClass="custom-button" text="Suprimmer" />
+            <Button onAction="#resetForm" styleClass="custom-button" text="Reset" />
+            <Button fx:id="btnPayer" styleClass="custom-button" text="payer" onAction="#payerOrder"/>
+            <Button fx:id="btnCancel" styleClass="custom-button" text="Cancel" onAction="#cancelOrder"/>
+        </VBox>
+    </left>
+    <right>
+        <VBox>
+            <TextField fx:id="serch" />
+            <TableView fx:id="tableOrder" onMouseClicked="#mouveToForm">
+                <columns>
+                    <TableColumn text="ID">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Date">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="date" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Client">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="client" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Tatal">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="total" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Etat">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="orderType"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </right>
+    <center>
+        <GridPane styleClass="custom-pane-center">
+            <Label styleClass="custom-label" text="ID : " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label styleClass="custom-label" text="Date : " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label styleClass="custom-label" text="Client" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label styleClass="custom-label" text="Total" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="idOrder" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <DatePicker fx:id="dateOrder" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="clientOrder" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="totalOrder" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label fx:id="require" textFill="red" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        </GridPane>
+    </center>
+</BorderPane>
